@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday Sarvani 💗</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--g1:#fee9f7;--g2:#e8f5fe;--g3:#fef2e8;--card:rgba(255,255,255,.92);--ink:#4a3a44;--soft:#7a6470;--pink:#ff5fa2;--pink2:#ff99cc;--vio:#8a2be2}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--g1:#2a1626;--g2:#18202e;--g3:#2b1f1a;--card:rgba(48,30,42,.94);--ink:#fbeaf0;--soft:#c9a8b6;--vio:#c79bff}}
+:root[data-theme="dark"]{--g1:#2a1626;--g2:#18202e;--g3:#2b1f1a;--card:rgba(48,30,42,.94);--ink:#fbeaf0;--soft:#c9a8b6;--vio:#c79bff}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+body{min-height:100%;background:linear-gradient(-45deg,var(--g1),var(--g2),var(--g3),var(--g1));background-size:400% 400%;animation:bg 14s ease infinite;font-family:'Quicksand',system-ui,sans-serif;font-weight:500;color:var(--ink);overflow-x:hidden}
+@keyframes bg{50%{background-position:100% 50%}}
+.step{display:none;min-height:100vh;padding:2rem 1.2rem 3rem;text-align:center;flex-direction:column;align-items:center;justify-content:center;position:relative;z-index:2;animation:in .7s ease}
+.step.on{display:flex}
+@keyframes in{from{opacity:0;transform:translateY(20px)}}
+h1,h2{font-family:'Dancing Script',cursive,serif;color:var(--pink);line-height:1.2}
+h1{font-size:clamp(2.2rem,10vw,3.4rem);margin-bottom:1rem}
+h2{font-size:clamp(1.9rem,8.5vw,2.6rem);margin-bottom:1rem}
+p.sub{font-size:1.15rem;color:var(--vio);margin:.5rem 0 1.6rem;max-width:28ch;line-height:1.5}
+.big{font-size:3.4rem;margin-bottom:.8rem;animation:bob 2.4s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-10px)}}
+.btn{font:inherit;font-weight:600;font-size:1.1rem;padding:.95rem 2.1rem;border:0;border-radius:50px;color:#fff;background:linear-gradient(45deg,var(--pink),var(--pink2));box-shadow:0 6px 18px rgba(255,95,162,.45);cursor:pointer;margin-top:1.2rem;transition:transform .2s}
+.btn:active{transform:scale(.95)}
+.btn.hide{display:none}
+/* balloons */
+.bls{display:grid;grid-template-columns:repeat(2,1fr);gap:1.4rem 2.6rem;margin:1rem 0}
+.bl{width:78px;height:96px;border-radius:50% 50% 48% 48%/58% 58% 42% 42%;position:relative;cursor:pointer;animation:float 3s ease-in-out infinite;box-shadow:inset -8px -8px 14px rgba(0,0,0,.12),inset 8px 8px 14px rgba(255,255,255,.35)}
+.bl::after{content:"";position:absolute;left:50%;bottom:-34px;width:2px;height:34px;background:var(--soft);opacity:.6}
+.bl::before{content:"";position:absolute;left:50%;bottom:-6px;transform:translateX(-50%);border:6px solid transparent;border-bottom-color:inherit;border-top:0;filter:brightness(.9)}
+.bl:nth-child(2){animation-delay:-.7s}.bl:nth-child(3){animation-delay:-1.4s}.bl:nth-child(4){animation-delay:-2.1s}
+@keyframes float{50%{transform:translateY(-14px) rotate(3deg)}}
+.bl.pop{animation:none;background:transparent!important;box-shadow:none;pointer-events:none}
+.bl.pop::before{display:none}
+.bl.pop::after{left:0;bottom:auto;top:0;width:100%;height:100%;border-radius:50%;background:none;border:4px solid #ff5fa2;opacity:0;animation:ring .5s ease-out}
+@keyframes ring{from{transform:scale(.6);opacity:1}to{transform:scale(1.9);opacity:0}}
+.bl .iw{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;white-space:nowrap;font-family:'Dancing Script',cursive,serif;font-size:2rem;color:var(--pink);opacity:0;transform:scale(0) rotate(-20deg)}
+.bl.pop .iw{opacity:1;transform:scale(1);transition:all .6s cubic-bezier(.3,1.6,.5,1) .15s}
+.words{font-family:'Dancing Script',cursive;font-size:2.4rem;color:var(--pink);min-height:3.2rem;margin-top:.8rem}
+.words span{display:inline-block;margin:0 .15em;animation:wd .6s cubic-bezier(.3,1.6,.5,1)}
+@keyframes wd{from{transform:scale(0) rotate(-20deg)}}
+/* cake */
+.cake{width:230px;cursor:pointer}
+.flame{transform-origin:50% 100%;animation:fl .4s ease-in-out infinite alternate}
+@keyframes fl{to{transform:scale(1.15,.9) rotate(4deg)}}
+.out .flame{display:none}
+.smoke{opacity:0}
+.out .smoke{animation:sm 2s ease-out forwards}
+@keyframes sm{from{opacity:.7;transform:translateY(0)}to{opacity:0;transform:translateY(-40px)}}
+.wish{opacity:0;transition:opacity 1s;font-size:1.15rem;color:var(--vio);margin-top:1rem;max-width:26ch;line-height:1.5;min-height:3.6em}
+/* bouquet */
+.bq{position:relative;width:240px;height:240px;margin:.5rem 0 1rem}
+.bq i{position:absolute;font-style:normal;font-size:3.4rem;transform:scale(0);animation:bloom .8s cubic-bezier(.3,1.6,.5,1) forwards}
+@keyframes bloom{to{transform:scale(1) rotate(var(--r,0deg))}}
+/* photos */
+.pics{display:flex;flex-direction:column;gap:1.4rem;align-items:center;margin:.5rem 0}
+.pol{background:#fff;padding:.7rem .7rem 1.6rem;border-radius:6px;box-shadow:0 8px 20px rgba(0,0,0,.18);width:min(78vw,300px);transform:rotate(var(--t,-2deg))}
+.pol:nth-child(2){--t:2.5deg}.pol:nth-child(3){--t:-1.5deg}
+.pol .ph{height:min(70vw,260px);border-radius:3px;background:linear-gradient(135deg,#ff9ac1,#ffc3a0);display:flex;align-items:center;justify-content:center;color:#fff;font-size:1rem;flex-direction:column;gap:.3rem;overflow:hidden}
+.pol .ph img{width:100%;height:100%;object-fit:cover}
+.pol .ph b{font-size:2.6rem}
+/* points */
+.main{background:var(--card);border-radius:22px;padding:1.4rem 1.2rem;box-shadow:0 8px 24px rgba(0,0,0,.1);max-width:520px;width:100%;text-align:left}
+.main h2{text-align:center;font-size:clamp(1.5rem,6.5vw,2rem);margin-bottom:1rem}
+.pt{display:flex;gap:.9rem;align-items:flex-start;padding:1rem .9rem;margin:.8rem 0;border-radius:18px;background:linear-gradient(135deg,rgba(255,95,162,.13),rgba(178,141,255,.16));border-left:4px solid var(--pink);line-height:1.55;animation:sl .7s cubic-bezier(.3,1.4,.5,1)}
+.pt:nth-child(even){flex-direction:row-reverse;border-left:0;border-right:4px solid var(--vio);text-align:right;animation-name:sr}
+@keyframes sl{from{opacity:0;transform:translateX(-40px) scale(.9)}}
+@keyframes sr{from{opacity:0;transform:translateX(40px) scale(.9)}}
+.pt .ic{font-size:1.8rem;min-width:3rem;height:3rem;border-radius:50%;background:var(--card);box-shadow:0 4px 12px rgba(255,95,162,.3);display:flex;align-items:center;justify-content:center;animation:bob 2.4s ease-in-out infinite}
+.pt h3{font-family:'Dancing Script',cursive;color:var(--pink);font-size:1.45rem;margin-bottom:.15rem;line-height:1.2}
+.pt .tx{min-height:1.5em}
+.cnt{font-size:.9rem;color:var(--pink);margin-top:.9rem}
+/* error */
+.err{font-family:ui-monospace,Menlo,Consolas,monospace;background:#1d1626;color:#f5e9ff;border-radius:14px;padding:1.4rem 1.2rem;width:100%;max-width:460px;text-align:left;box-shadow:0 10px 30px rgba(0,0,0,.35);line-height:1.7}
+.err .top{color:#ff6b8a;font-weight:700;margin-bottom:.6rem}
+.err .dim{color:#b9a5d1}
+.err .te{margin:.9rem 0;color:#ffd1e6}
+.cursor{display:inline-block;width:.6em;height:1.1em;background:#ff6b8a;vertical-align:-2px;animation:bk 1s steps(1) infinite}
+@keyframes bk{50%{opacity:0}}
+.fl{position:fixed;bottom:-40px;pointer-events:none;z-index:9;animation:up linear forwards}
+@keyframes up{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}
+.bgf{position:fixed;inset:0;pointer-events:none;z-index:1;overflow:hidden}
+.bgf span{position:absolute;bottom:-30px;opacity:.5;animation:up linear infinite}
+</style>
+</head>
+<body>
+<div class="bgf" id="bgf"></div>
+
+<!-- 1 -->
+<section class="step on" id="s1">
+  <div class="big">🎂</div>
+  <h1>Happy Birthday to the girl I’ve known since childhood,</h1>
+  <h1 style="font-size:clamp(2.8rem,14vw,4.4rem)">Sarvani 💗</h1>
+  <p class="sub">Are you excited for what’s next?</p>
+  <button class="btn" data-next>Next ➜</button>
+</section>
+
+<!-- 2 balloons -->
+<section class="step" id="s2">
+  <h2>Pop the balloons 🎈</h2>
+  <p class="sub" id="bh">Tap each one!</p>
+  <div class="bls">
+    <div class="bl" style="background:#ff7aa8;border-bottom-color:#ff7aa8" data-w="You"><span class="iw">You</span></div>
+    <div class="bl" style="background:#7ec8ff;border-bottom-color:#7ec8ff" data-w="are"><span class="iw">are</span></div>
+    <div class="bl" style="background:#ffd166;border-bottom-color:#ffd166" data-w="so"><span class="iw">so</span></div>
+    <div class="bl" style="background:#b28dff;border-bottom-color:#b28dff" data-w="special"><span class="iw">special</span></div>
+  </div>
+  <button class="btn hide" data-next id="n2">Next ➜</button>
+</section>
+
+<!-- 3 cake -->
+<section class="step" id="s3">
+  <h2>Make a wish 🕯️</h2>
+  <p class="sub" id="ch">Tap the candle to blow it out</p>
+  <svg class="cake" id="cake" viewBox="0 0 230 210" aria-label="Birthday cake with candle">
+    <ellipse cx="115" cy="196" rx="105" ry="10" fill="rgba(0,0,0,.12)"/>
+    <rect x="25" y="130" width="180" height="62" rx="12" fill="#ff9ac1"/>
+    <rect x="25" y="130" width="180" height="16" rx="8" fill="#fff"/>
+    <path d="M25 146q15 20 30 0t30 0 30 0 30 0 30 0 30 0v6H25z" fill="#fff"/>
+    <rect x="45" y="92" width="140" height="44" rx="10" fill="#ffc3d9"/>
+    <rect x="45" y="92" width="140" height="12" rx="6" fill="#fff"/>
+    <circle cx="70" cy="122" r="5" fill="#ff5fa2"/><circle cx="115" cy="124" r="5" fill="#ffb347"/><circle cx="160" cy="122" r="5" fill="#ff5fa2"/>
+    <rect x="109" y="52" width="12" height="42" rx="3" fill="#7ec8ff"/>
+    <path d="M109 62l12 6M109 72l12 6M109 82l12 6" stroke="#fff" stroke-width="3"/>
+    <g class="flame"><path d="M115 22c10 12 9 22 0 28-9-6-10-16 0-28z" fill="#ffb347"/><path d="M115 32c5 6 5 11 0 14-5-3-5-8 0-14z" fill="#fff3a0"/></g>
+    <g class="smoke"><path d="M115 48q-8-10 0-18t0-16" stroke="#aaa" stroke-width="3" fill="none"/></g>
+  </svg>
+  <div class="wish" id="wish">Close your eyes… and make a wish ✨</div>
+  <button class="btn hide" data-next id="n3">Next ➜</button>
+</section>
+
+<!-- 4 bouquet -->
+<section class="step" id="s4">
+  <h2>Your rose bouquet 🌹</h2>
+  <div class="bq" id="bq"></div>
+  <p class="sub">Roses for the most special girl.</p>
+  <button class="btn" data-next>Next ➜</button>
+</section>
+
+<!-- 5 photos -->
+<section class="step" id="s5">
+  <h2>Some moments 📸</h2>
+  <div class="pics" id="pics"></div>
+  <button class="btn" data-next>Next ➜</button>
+</section>
+
+<!-- 6 points -->
+<section class="step" id="s6">
+  <div class="main">
+    <h2>On this special day, I just want you to know how much you mean to me 💖</h2>
+    <div id="pts"></div>
+    <div class="cnt" id="pc"></div>
+  </div>
+  <button class="btn" id="n6">Next ➜</button>
+</section>
+
+<!-- 7 error -->
+<section class="step" id="s7">
+  <div class="err">
+    <div class="top">⚠ ERROR 404</div>
+    <div class="dim">chapter_2.exe — not found</div>
+    <div class="te">Inka chala cheppali… but idi time kaadu.</div>
+    <div>Part 2 → some other day 💌<span class="cursor"></span></div>
+  </div>
+  <p class="sub" style="margin-top:1.6rem">Until then, happy birthday, Sarvani! 🎉</p>
+  <button class="btn" id="again">Replay from the start ↺</button>
+</section>
+
+<script>
+(function(){
+// ===== Add your photos here later: put image links/data in this list =====
+var PHOTOS=[];
+var POINTS=[
+{i:'🌟',h:'A rare kind of person',t:'You’re such a kind and wonderful person, and I feel lucky to share such a good bond with you. 💖'},
+{i:'🕰️',h:'Not new… it’s since forever',t:'I don’t know why you’re so special to me. It’s not just from today, you’ve been special since childhood. Let me try to find out why… 🔍'},
+{i:'⚡',h:'The name effect',t:'Whenever I hear your name, it brings an excitement. Funny how a single name can do that, right? ✨'},
+{i:'📼',h:'Rewind to those years',t:'Do you remember how we were years back? I always try to bring that bond back. 🧸'},
+{i:'🌈',h:'Your vibe is everything',t:'I never get bored when we’re together. Wherever we are, I always want to look after you and make sure you’re comfortable. 🤗'},
+{i:'💌',h:'The unsaid part',t:'You mean more to me than I have ever shown. 💗'},
+{i:'🌠',h:'My wishes for you',t:'Wishing you success, happiness and everything your heart desires. 🌟'},
+{i:'🌻',h:'Keep shining',t:'You are capable of achieving so much. Stay the amazing girl you are, always spreading positivity around. Have the happiest year ahead! 🥳'}
+];
+var OLD_POINTS=[
+"You’re such a kind and wonderful person, and I feel lucky to share such a good bond with you. 💖",
+"I don’t know why you’re so special to me. It’s not that you’re special only at this time, you’ve been special to me since childhood. Let me try to find out why… 🌸",
+"Whenever I hear your name, it brings an excitement. ✨",
+"Do you remember how we were years back? I always try to bring that bond back. 🧸",
+"The main thing is your vibe, it’s everything. I never get bored when we’re together, and wherever we are, I always want to look after you and make sure you’re comfortable. 🤗",
+"You mean more to me than I have ever shown. 💗",
+"Wishing you success, happiness and everything your heart desires. 🌟",
+"Stay the amazing girl you are, always spreading positivity around. Have the happiest year ahead! 🥳"
+];
+var $=function(i){return document.getElementById(i)};
+var steps=document.querySelectorAll('.step'),cur=0;
+function show(i){steps[cur].classList.remove('on');cur=i;steps[i].classList.add('on');window.scrollTo(0,0);
+}
+document.querySelectorAll('[data-next]').forEach(function(b){b.onclick=function(){show(cur+1)}});
+
+// background floaters
+var bf=$('bgf'),E=['💖','✨','🌸','💫','🦋'];
+for(var k=0;k<10;k++){var s=document.createElement('span');s.textContent=E[k%5];s.style.left=(k*10+Math.random()*8)+'vw';s.style.fontSize=(16+Math.random()*16)+'px';s.style.animationDuration=(9+Math.random()*8)+'s';s.style.animationDelay=(-Math.random()*10)+'s';bf.appendChild(s)}
+function burst(n,set){set=set||['💖','🎈','✨','🌸','🎉','💫'];
+  for(var i=0;i<n;i++)(function(){var d=document.createElement('div');d.className='fl';d.textContent=set[Math.floor(Math.random()*set.length)];
+  d.style.left=Math.random()*100+'vw';d.style.fontSize=(18+Math.random()*26)+'px';d.style.animationDuration=(3+Math.random()*3)+'s';d.style.animationDelay=Math.random()*.7+'s';
+  document.body.appendChild(d);setTimeout(function(){d.remove()},7000)})()}
+
+// balloons
+var popped=0,words=[];
+document.querySelectorAll('.bl').forEach(function(b){b.onclick=function(){
+  if(b.classList.contains('pop'))return;b.classList.add('pop');popped++;
+  burst(6,['✨','💥','🎊']);
+  if(popped===4){$('bh').textContent='You are so special 💖';setTimeout(function(){burst(30);$('n2').classList.remove('hide')},500)}
+}});
+
+// candle
+var blown=false;
+$('cake').onclick=function(){if(blown)return;blown=true;this.classList.add('out');
+  $('ch').textContent='Wish made! 🎉';
+  $('wish').style.opacity=1;$('wish').textContent='May every wish of yours come true, Sarvani 💫';
+  burst(40);setTimeout(function(){$('n3').classList.remove('hide')},1200)};
+setTimeout(function(){$('wish').style.opacity=1},800);
+
+// bouquet
+var bqDone=false;
+function bouquet(){if(cur!==3||bqDone)return;bqDone=true;}
+var rs=[[95,20,-10],[20,45,-25],[170,45,25],[60,80,-12],[130,80,12],[95,95,0],[35,125,-18],[155,125,18],[95,135,0]];
+var RB=$('bq');
+rs.forEach(function(p,i){var e=document.createElement('i');e.textContent='🌹';e.style.left=p[0]+'px';e.style.top=p[1]+'px';e.style.setProperty('--r',p[2]+'deg');e.style.animationDelay=(i*.15)+'s';e.hidden=true;RB.appendChild(e)});
+var lf=document.createElement('i');lf.textContent='🎀';lf.style.left='95px';lf.style.top='185px';lf.style.animationDelay='1.6s';lf.hidden=true;RB.appendChild(lf);
+var _show=show;show=function(i){_show(i);if(i===3)RB.querySelectorAll('i').forEach(function(e){e.hidden=false});if(i===4)photos()};
+
+// photos
+var pd=false;
+function photos(){if(pd)return;pd=true;var n=Math.max(PHOTOS.length,3);
+  for(var i=0;i<n;i++){var d=document.createElement('div');d.className='pol';
+    d.innerHTML=PHOTOS[i]?'<div class="ph"><img src="'+PHOTOS[i]+'" alt="Moment"></div>':'<div class="ph"><b>📷</b>Our moment</div>';
+    $('pics').appendChild(d)}}
+
+// points
+var pi=0;
+function nextPoint(){
+  if(pi>=POINTS.length){burst(0);show(cur+1);return}
+  var P=POINTS[pi],d=document.createElement('div');d.className='pt';
+  d.innerHTML='<div class="ic">'+P.i+'</div><div><h3>'+P.h+'</h3><div class="tx"></div></div>';
+  $('pts').appendChild(d);pi++;$('pc').textContent=pi+' of '+POINTS.length;
+  d.scrollIntoView({behavior:'smooth',block:'center'});
+  var tx=d.querySelector('.tx'),c=0;
+  (function ty(){if(c<P.t.length){tx.textContent+=P.t.charAt(c++);setTimeout(ty,22)}})();
+  burst(6,[P.i,'✨','💖']);
+  if(pi===POINTS.length)$('n6').textContent='Click here for Chapter 2 💌';
+}
+$('n6').onclick=nextPoint;
+$('again').onclick=function(){location.reload()};
+})();
+</script>
+</body>
+</html>
